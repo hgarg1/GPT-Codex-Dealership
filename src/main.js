@@ -27,6 +27,14 @@ const setActiveNav = () => {
 
 setActiveNav()
 
+const navToggle = document.querySelector('.nav-toggle')
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = document.body.classList.toggle('nav-open')
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false')
+  })
+}
+
 const splitText = (element) => {
   const text = element.textContent.trim()
   if (!text) return
