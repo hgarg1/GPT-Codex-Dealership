@@ -35,6 +35,25 @@ if (navToggle) {
   })
 }
 
+const navLinks = document.querySelectorAll('.nav a')
+if (navLinks.length) {
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 820 && document.body.classList.contains('nav-open')) {
+        document.body.classList.remove('nav-open')
+        navToggle?.setAttribute('aria-expanded', 'false')
+      }
+    })
+  })
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 820 && document.body.classList.contains('nav-open')) {
+    document.body.classList.remove('nav-open')
+    navToggle?.setAttribute('aria-expanded', 'false')
+  }
+})
+
 const splitText = (element) => {
   const text = element.textContent.trim()
   if (!text) return
