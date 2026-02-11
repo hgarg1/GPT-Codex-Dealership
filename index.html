@@ -15,8 +15,8 @@
       content="Apex Motor Co. is a private luxury dealership delivering curated performance vehicles, concierge service, and bespoke ownership experiences."
     />
     <title>Apex Motor Co. | Private Luxury Dealership</title>
-    <script type="module" crossorigin src="/assets/main-B_LMwuck.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-B8_xRq09.css">
+    <script type="module" crossorigin src="/assets/main-CwYD5q4G.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-AN6r5fQo.css">
   </head>
   <body>
     <div class="page">
@@ -364,9 +364,48 @@
                 <input type="text" placeholder="Aurum S8 or Collection Inquiry" />
               </label>
               <label>
-                Preferred Time
-                <input type="text" placeholder="Weekday evenings" />
+                Phone
+                <input type="tel" placeholder="+1 (___) ___-____" />
               </label>
+            </div>
+            <div class="visit-scheduler" data-visit-scheduler>
+              <div class="visit-scheduler-header">
+                <div>
+                  <p class="eyebrow">Design Your Time</p>
+                  <p class="visit-scheduler-sub">
+                    Build any date-time combination with curated slots, then lock your preferred arrival
+                    sequence.
+                  </p>
+                </div>
+                <label class="visit-zone-label">
+                  Time zone
+                  <select name="time_zone" data-visit-zone></select>
+                </label>
+              </div>
+
+              <div class="visit-mode-tabs" role="tablist" aria-label="Appointment rhythm">
+                <button class="visit-mode active" type="button" data-visit-mode="morning" aria-selected="true">
+                  Morning Focus
+                </button>
+                <button class="visit-mode" type="button" data-visit-mode="golden" aria-selected="false">
+                  Golden Hour
+                </button>
+                <button class="visit-mode" type="button" data-visit-mode="night" aria-selected="false">
+                  After Dark
+                </button>
+                <button class="visit-mode" type="button" data-visit-mode="flex" aria-selected="false">
+                  Fully Flexible
+                </button>
+              </div>
+
+              <div class="visit-date-strip" role="listbox" aria-label="Preferred date" data-visit-dates></div>
+              <div class="visit-time-grid" role="listbox" aria-label="Preferred time" data-visit-times></div>
+              <div class="visit-combo-grid" role="listbox" aria-label="Suggested combinations" data-visit-combos></div>
+              <div class="visit-scheduler-summary" aria-live="polite" data-visit-summary></div>
+              <input type="hidden" name="preferred_date" data-visit-date-value />
+              <input type="hidden" name="preferred_time" data-visit-time-value />
+              <input type="hidden" name="preferred_utc" data-visit-utc-value />
+              <input type="hidden" name="preferred_combo" data-visit-combo-value />
             </div>
             <div class="form-row">
               <label>
