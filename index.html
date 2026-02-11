@@ -15,8 +15,8 @@
       content="Apex Motor Co. is a private luxury dealership delivering curated performance vehicles, concierge service, and bespoke ownership experiences."
     />
     <title>Apex Motor Co. | Private Luxury Dealership</title>
-    <script type="module" crossorigin src="/assets/main-Cd6l-zHZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-BTF7q_KM.css">
+    <script type="module" crossorigin src="/assets/main-B_LMwuck.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-B8_xRq09.css">
   </head>
   <body>
     <div class="page">
@@ -304,24 +304,50 @@
               <p class="eyebrow">Visit the Atelier</p>
               <h2 class="section-title reveal">A private showroom in the heart of the city.</h2>
               <p class="section-sub reveal">
-                214 Meridian Avenue, Suite 810<br />
-                New York, NY 10010<br />
-                Mon-Sat - 9:00-7:00
+                Step inside our private city atelier for curated consultations, tailored commissioning,
+                and discreet handovers.
               </p>
+              <div class="visit-details" data-stagger>
+                <div class="visit-detail-card reveal">
+                  <span class="visit-detail-label">Address</span>
+                  <strong class="visit-detail-value">214 Meridian Avenue, Suite 810</strong>
+                  <span class="visit-detail-note">New York, NY 10010</span>
+                </div>
+                <div class="visit-detail-card reveal">
+                  <span class="visit-detail-label">Hours</span>
+                  <strong class="visit-detail-value">Mon-Sat, 9:00-7:00</strong>
+                  <span class="visit-detail-note">Private appointments only</span>
+                </div>
+              </div>
               <div class="contact-actions reveal">
                 <a class="btn primary" href="mailto:concierge@apexmotor.co">Email Concierge</a>
                 <a class="btn ghost" href="tel:+12125550118">Call +1 (212) 555-0118</a>
               </div>
             </div>
-            <div class="visit-panel" aria-hidden="true">
-              <div class="map-frame"></div>
+            <div class="visit-panel">
+              <div class="map-frame">
+                <iframe
+                  title="Atelier preview map"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=45.4408,12.3155&z=14&output=embed"
+                ></iframe>
+              </div>
               <div class="map-label">
-                <span>Apex Motor Co.</span>
-                <span>Private Access Only</span>
+                <span>Venice Preview</span>
+                <span>Map Concierge</span>
               </div>
             </div>
           </div>
-          <form class="contact-form reveal">
+          <form class="contact-form contact-form--visit reveal">
+            <div class="visit-form-header">
+              <p class="eyebrow">Private Request</p>
+              <h3>Arrange Your Atelier Appointment</h3>
+              <p class="visit-form-sub">
+                Share your preferred window and vehicle interest. A concierge advisor will confirm your
+                private session within 24 hours.
+              </p>
+            </div>
             <div class="form-row">
               <label>
                 Full Name
@@ -342,11 +368,32 @@
                 <input type="text" placeholder="Weekday evenings" />
               </label>
             </div>
+            <div class="form-row">
+              <label>
+                Preferred Experience
+                <select>
+                  <option>Atelier Visit</option>
+                  <option>Private Test Drive</option>
+                  <option>Remote Concierge Call</option>
+                </select>
+              </label>
+              <label>
+                Preferred Contact
+                <select>
+                  <option>Email</option>
+                  <option>Phone</option>
+                  <option>Text Message</option>
+                </select>
+              </label>
+            </div>
             <label>
               Message
               <textarea rows="4" placeholder="Tell us about your ideal driving experience."></textarea>
             </label>
-            <button class="btn primary" type="submit">Submit Request</button>
+            <div class="visit-form-actions">
+              <p class="visit-form-note">Discreet appointments only. Confirmation includes valet details.</p>
+              <button class="btn primary" type="submit">Submit Private Request</button>
+            </div>
           </form>
         </section>
       </main>
