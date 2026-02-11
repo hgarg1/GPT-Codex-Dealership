@@ -1,8 +1,8 @@
 {
   "name": "Apex Motor Co.",
   "short_name": "Apex",
-  "start_url": "/GPT-Codex-Dealership/",
-  "scope": "/GPT-Codex-Dealership/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0a0a0c",
   "theme_color": "#0a0a0c",
